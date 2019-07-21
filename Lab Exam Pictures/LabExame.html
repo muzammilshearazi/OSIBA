@@ -1,0 +1,159 @@
+<html>
+	<head>
+		<title> TIC TAC TOE </title>
+		
+		<script>
+		 var count=0;
+		 var p="";
+		 var m1=document.getElementById(1);
+		 var m2=document.getElementById(2);
+		 var m3=document.getElementById(3);
+		 var m4=document.getElementById(4);
+		 var m5=document.getElementById(5);
+		 var m6=document.getElementById(6);
+		 var m7=document.getElementById(7);
+		 var m8=document.getElementById(8);
+		 var m9=document.getElementById(9);
+		 
+		 
+		function divImage(v)
+		{
+		    var image=document.getElementById(v);
+			
+			
+			if(image.innerHTML=="" && p=="")
+			   {
+		     image.src="Cross.png";
+			
+			 image.innerHTML=="x"
+			 image.value="x";
+			 p="x";
+			
+		
+			 
+			  }
+			  else if( image.innerHTML=="" && p=="x")
+			  {
+			   image.src="Circle.png";
+			   image.innerHTML=="o"
+			    image.value="o";
+			    p="o";
+			  
+			   
+			  }
+			  else if(image.innerHTML=="" && p=="o")
+			  {
+			   image.src="Cross.png";
+			    
+			   image.innerHTML=="x"
+			    image.value="x";
+	               
+			  p="x";
+		
+			  }
+			  else if(image.innerHTML=="o" ||  image.innerHTML=="x")
+			  {
+			  }
+			  
+			  
+			 
+			
+			   
+			  
+			  
+		}
+		
+		function  won()
+		{
+		    if(m1.value=="x" &&  m2.value=="x" && m3.value=="x" || m1.value=="o" &&  m2.value=="o" && m3.value=="0" )
+			 {
+			     document.write("you won");
+			 }
+			 else if(m4.value=="x" &&  m5.value=="x" && m6.value=="x" || m4.value=="o" &&  m5.value=="o" && m6.value=="0" )
+			 {
+			  document.write("you won");
+			 }
+			 else if(m7.value=="x" &&  m8.value=="x" && m9.value=="x" || m7.value=="o" &&  m8.value=="o" && m9.value=="0" )
+			 {
+			  document.write("you won");
+			 }
+			 else if(m1.value=="x" &&  m4.value=="x" && m7.value=="x" || m1.value=="o" &&  m4.value=="o" && m7.value=="0" )
+			 {
+			  document.write("you won");
+			 }
+			 else if(m2.value=="x" &&  m5.value=="x" && m8.value=="x" || m2.value=="o" &&  m5.value=="o" && m8.value=="0" )
+			 {
+			  document.write("you won");
+			 }
+			 else if(m3.value=="x" &&  m6.value=="x" && m9.value=="x" || m3.value=="o" &&  m6.value=="o" && m9.value=="0" )
+			 {
+			  document.write("you won");
+			 }
+		}
+		
+		</script>
+		
+	</head>
+	
+
+	<body>
+		<div onclick="divImage(1)" style="height:20%; width:15%; background-color:yellow; float:left; border: 2px solid white;">  
+		<img src=" " id=1 value= "" style="height:100%; width:100%"> </div></center>
+		
+		<div onclick="divImage(2)" style="height:20%; width:15%; background-color:yellow; float:left;border: 2px solid white;"> 
+		<img src=" " id=2 value= "" style="height:100%; width:100%"> </div>
+		
+		<div onclick="divImage(3)" style="height:20%; width:15%; background-color:yellow; float:left;border: 2px solid white;">  
+		<img src=" " id=3 value= "" style="height:100%; width:100%"> </div>
+		<br><br><br><br><br><br><br><br>
+		
+		<div onclick="divImage(4)" style="height:20%; width:15%; background-color:yellow;float:left;border: 2px solid white;">  
+		<img src=" " id=4 value= "" style="height:100%; width:100%"> </div>
+		
+		<div onclick="divImage(5)" style="height:20%; width:15%; background-color:yellow; float:left;border: 2px solid white;"> 
+		<img src=" " id=5 value= "" style="height:100%; width:100%">  </div>
+		
+		<div onclick="divImage(6)" style="height:20%; width:15%; background-color:yellow; float:left;border: 2px solid white;"> 
+	    <img src=" " id=6 value= "" style="height:100%; width:100%"> </div>
+		<br><br><br><br><br><br><br><br>
+		
+		<div onclick="divImage(7)" style="height:20%; width:15%; background-color:yellow; float:left;border: 2px solid white;">  
+		<img src=" " id=7 value="" style="height:100%; width:100%"> </div>
+		
+		<div onclick="divImage(8)" style="height:20%; width:15%; background-color:yellow;float:left;border: 2px solid white;"> 
+		<img src=" " id=8 value= "" style="height:100%; width:100%"> </div>
+		
+		<div onclick="divImage(9)" style="height:20%; width:15%; background-color:yellow; float:left;border: 2px solid yellow;"> 
+		<img src=" " id=9 value="" style="height:100%; width:100%">  </div>
+		
+		<br><br><br><br><br><br><br>
+		
+		<h3> PLAYER1(x)  : </h3>   <h3> TIE : </h3>  <h3> PLAYER2(O) : </h3>
+		 
+	
+		
+		
+		
+		
+	
+	
+	</body>
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
