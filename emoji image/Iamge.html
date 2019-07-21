@@ -1,0 +1,107 @@
+<html>
+
+<head>
+  <style>
+.l{
+height:150px;
+width:250px;
+
+}
+</style>
+
+<script>
+    var b1="";
+    var b2="";
+    var count=1;
+
+ function func(button){
+
+   if(button.id=="p1")
+    button.src="1.png";
+    else   if(button.id=="p2")
+       button.src="2.jpg";
+       else   if(button.id=="p3")
+          button.src="3.jpg";
+          else   if(button.id=="p4")
+             button.src="4.jpg";
+             else   if(button.id=="p5")
+                button.src="5.jpg";
+                else   if(button.id=="p6")
+                   button.src="6.jpg";
+                   else   if(button.id=="p7")
+                      button.src="7.jpg";
+                      else   if(button.id=="p8")
+                         button.src="8.jpg";
+                         else
+                           if(button.id=="p9")
+                            button.src="1.png";
+                            else   if(button.id=="p10")
+                               button.src="2.jpg";
+                               else   if(button.id=="p11")
+                                  button.src="3.jpg";
+                                  else   if(button.id=="p12")
+                                     button.src="4.jpg";
+                                     else   if(button.id=="p13")
+                                        button.src="5.jpg";
+                                        else   if(button.id=="p14")
+                                           button.src="6.jpg";
+                                           else   if(button.id=="p15")
+                                              button.src="7.jpg";
+                                              else   if(button.id=="p16")
+                                                 button.src="8.jpg";
+   if(count==1)
+    { b1=button;
+      count++;}
+  else if(count==2)
+ { count=1;
+   b2=button;
+   camp();
+ }
+
+ }
+
+
+
+ function camp(){
+
+    if(b1.id=="p1" && b2.id=="p9" || b1.id=="p9" && b2.id=="p1")
+     {}
+  else if(b1.id=="p2" && b2.id=="p10" || b1.id=="p10" && b2.id=="p2")
+  {}
+  else if(b1.id=="p3" && b2.id=="p11" || b1.id=="p11" && b2.id=="p3"){}
+  else if(b1.id=="p4" && b2.id=="p12" || b1.id=="p12" && b2.id=="p4"){}
+  else if(b1.id=="p5" && b2.id=="p13" || b1.id=="p13" && b2.id=="p5"){}
+  else if(b1.id=="p6" && b2.id=="p14" || b1.id=="p14" && b2.id=="p6"){}
+  else if(b1.id=="p7" && b2.id=="p15" || b1.id=="p15" && b2.id=="p7"){}
+  else if(b1.id=="p8" && b2.id=="p16" || b1.id=="p16" && b2.id=="p8"){}
+  else {
+  b1.src="";
+  b2.src="";
+  }
+
+ }
+   </script>
+
+</head>
+<title></title>
+<body>
+<input  id="p1" onclick="func(this)" type="image" value="" class="l"/>
+<input  id="p2" onclick="func(this)" type="image"  value="" class="l"/>
+<input  id="p3" onclick="func(this)" type="image" value="" class="l"/>
+<input  id="p4" onclick="func(this)" type="image"  value="" class="l"/><br/>
+<input  id="p5" onclick="func(this)" type="image" value="" class="l"/>
+<input  id="p6" onclick="func(this)" type="image"  value="" class="l"/>
+<input  id="p7" onclick="func(this)" type="image"  value="" class="l"/>
+<input  id="p8" onclick="func(this)" type="image"  value="" class="l"/><br/>
+<input  id="p9" onclick="func(this)" type="image"  value=""  class="l"/>
+<input  id="p10" onclick="func(this)" type="image"  value="" class="l"/>
+<input  id="p11" onclick="func(this)" type="image"  value="" class="l"/>
+<input  id="p12" onclick="func(this)" type="image" value="" class="l"/><br/>
+<input  id="p13" onclick="func(this)" type="image" value=""  class="l"/>
+<input  id="p14" onclick="func(this)" type="image" value="" class="l"/>
+<input  id="p15" onclick="func(this)" type="image" value="" class="l"/>
+<input  id="p16" onclick="func(this)" type="image" value=""  class="l"/>
+
+
+</body>
+</html>
